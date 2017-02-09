@@ -17,8 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        SKYContainer.default().configAddress("http://localhost:3001")
-        SKYContainer.default().configure(withAPIKey: "my_skygear_key")
+        /* Step 1
+        Add your own the server endpoint and API Key here.
+        The server endpoint and API key can be found on portal.skygear.io
+        */
+        SKYContainer.default().configAddress("<your server endpoint>")
+        SKYContainer.default().configure(withAPIKey: "<your api key>")
+        
         return true
     }
 
